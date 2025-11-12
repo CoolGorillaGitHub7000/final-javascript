@@ -60,13 +60,21 @@
      * Reads inputs, calculates BMI, gets category, and displays the result.
      */
     function handleCalculation() {
-      // Part 1 Get values from form fields
+      // Part 1 Get the inputted values from the filled in fields
       var name = document.getElementById("name").value;
       var weight = Number(document.getElementById("weight").value);
       var height = Number(document.getElementById("height").value);
 
-      // Part 2 Create  then call BMI calculation function
-      //var bmi = calculateBMI(weight, height);
+      // Part 2 Create the calculation function and then call it at the point the user submits
+      var bmi = calculateBMI(weight, height);
+      function calculateBMI(weight, height) {
+  // Create a variable named bmi to hold the calculation result.
+  var bmi = (weight / (height * height)) * 703;
+
+  // Return the value so other parts of the program can use it.
+  return bmi;
+}
+
 
       // Part 3 
      
