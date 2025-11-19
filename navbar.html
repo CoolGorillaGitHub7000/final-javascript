@@ -1,32 +1,30 @@
+<!-- navbar.html -->
 <!doctype html>
 <html lang="en">
 
 <head>
     <meta charset="utf-8">
-    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
 </head>
 
 <body>
-<nav class="navbar navbar-inverse">
-  <div class="container-fluid">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      <a class="navbar-brand" href="#">Adapt2College</a>
-    </div>
-    <div class="collapse navbar-collapse" id="Navibar">
-      <ul class="nav navbar-nav">
-        <li class="active"><a href="#">Main Page</a></li>
-        <a class="nav-link active" aria-current="page" href="home.html">Main Page</a>
-        <a class="nav-link" href="keywords.html">Key Words</a>
-        <a class="nav-link" href="advice.html">Advice</a>
-      </ul>
-    </div>
-  </div>
-</nav>
+    <nav id="site-nav" class="navbar navbar-expand-sm navbar-dark site-nav" role="navigation"
+        aria-label="Main navigation">
+        <div class="container">
+            <!-- No brand/logo -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav"
+                aria-controls="nav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div id="nav" class="collapse navbar-collapse">
+                <div class="navbar-nav">
+                    <a class="nav-link active" aria-current="page" href="home.html">Main</a>
+                    <a class="nav-link" href="keywords.html">Vocabulary</a>
+                    <a class="nav-link" href="advice.html">My Advice</a>
+                </div>
+            </div>
+        </div>
+    </nav>
 </body>
 
 </html>
